@@ -1,0 +1,616 @@
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/Nunito-ExtraBold.woff") format("woff"),
+	url("../fonts/Nunito-ExtraBold.woff2")  format("woff2");
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/Nunito-Regular.woff") format("woff"), 
+	url("../fonts/Nunito-ExtraBold.woff2") format("woff2");
+	font-weight: 400;
+}	
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/Nunito-Bold.woff2") format("woff2"), 
+	url("../fonts/Nunito-Bold.woff") format("woff");
+	font-weight: 700;
+}
+* {box-sizing: border-box;}
+
+body{
+	background-color: #fff;
+	line-height: 1.5;
+	font-family: "Nunito", "Arial", sans-serif;
+
+}
+.main-nav {
+	background-color: #e5f7f7;
+}
+.container {
+	max-width: 414px;
+	margin: 0 auto;
+	font-family: 'Nunito';
+}
+.nav {
+	margin: 0 auto;
+	padding: 20px 20px;			
+	max-width: 375px;
+	text-align: center;
+	color: rgb(47, 75, 110);
+	font-family: "Nunito", sans-serif;
+	font-weight: 700;
+}
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.navbar a {
+	margin-bottom: 10px;
+}
+.booklov-logo {
+	padding-top: 10px; 	
+}
+.join__link {
+	text-decoration: none;
+	color: rgb(47, 75, 110);
+	text-transform: uppercase;
+}
+.get-app__link {
+	position: relative;
+	padding: 10px 0 10px 15px;
+	align-items: center;
+	margin-bottom: 10px;
+	border: none; 
+	border-radius: 25px;
+	width: 180px;
+	background-color: #fdc96a;
+	color: rgb(47, 75, 110);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.get-app__link::before {
+	position: absolute;
+	content: url("../img/apple-icon.png");
+	top: 5px;
+	left: 15px;
+}
+.get-app__link:hover {
+	background-color: 	#FFA500;
+}
+.intro__img {
+	max-width: 90%;
+	/*height: 50%;*/
+}
+.intro__title {
+	font-size: 20px;
+}
+.intro__text {
+	padding: 0 20px;
+	margin-top: 0;
+	font-family: "Nunito";
+	font-weight: 400;
+	line-height: 20px;
+}
+.intro-link {
+	display: block;
+	margin: 0 auto;
+}
+.android-app {
+	padding-top: 15px;
+	font-size: 11px;
+}
+.intro__description {
+	display: flex;
+	align-items: center; 
+	line-height: 18px;
+	font-size: 14px;
+}
+hr {
+		border-top: 1px solid #e5f1f1;
+}
+.rounded-link {
+	background-color: #e5f7f7;
+	padding: 7px 15px; 
+	border: 1px solid rgb(47, 75, 110); 
+	color: rgb(47, 75, 110);
+	border-radius: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.rounded-link:hover {
+	background-color: lightgray;
+}
+.second-intro {
+	padding: 50px 0; 
+	margin: 0 auto;
+	text-align: center;
+}
+.second-intro__title {
+	margin: 0 auto;
+	font-size: 35px;
+	line-height: 1.268;
+}
+.category {
+	display: inline-block;	
+	padding: 70px 0; 
+}
+.we_know {
+	padding-top: 20px; 
+	margin: 0 auto;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.9px;
+}
+.item {
+	width: 180px;
+	font-size: 20px;
+	text-transform: capitalize;	
+}
+.item img {
+	height: 80px;	
+}
+@media (min-width: 420px) {
+	.container {
+		max-width: 768px;
+	}
+	.nav {
+		max-width: 768px;
+	}
+	.subscription {
+		display: 	flex;	
+		justify-content: 	space-around;	
+	}
+	.intro__description {
+		display: flex;
+		align-items: center; 
+		vertical-align: center;
+		justify-content: center;
+		line-height: 18px;
+		font-size: 14px;
+	}
+	.category {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;	
+	}
+}
+@media (min-width: 768px) {
+	.main-nav {
+			border-bottom-right-radius: 20%; 
+	}
+	.container {
+		max-width: 80%;
+	}
+	.nav {
+		max-width: 1024px;
+	}
+	.navbar {
+		display: flex;	
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		padding: 0; 
+	}
+	.booklov-logo-link {
+		margin-right: auto;
+	}
+	.join__link {
+		margin-right: 20px;
+	}
+	.intro__menu {
+		display: flex;
+		justify-content: space-between;
+		vertical-align: center;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding: 50px 0; 
+	}
+	.intro__img {
+		width: 40vw;
+		height: auto;
+	}
+	.intro__about {
+		width: 350px;
+		text-align: left;
+		padding: 0;
+	}
+	.intro__title {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 0;
+	}
+	.intro__text {
+		padding: 15px 0;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.intro-link {
+		margin: 0;
+	}
+	.intro__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.intro__description {
+		width: 350px;
+		font-family: "Nunito";
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 26px;
+	}
+	.intro__description--text {
+		margin-left: 30px;
+		text-align: left;
+	}
+	.second-intro__title {
+		width: 410px;
+	}
+	.we_know {
+		width: 490px;
+	}
+	.category {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	.main-nav {
+			border-bottom-right-radius: 20%; 
+	}
+	.container {
+		max-width: 100%;
+	}
+	.navbar {
+		display: flex;	
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+	}
+	.booklov-logo-link {
+		margin-right: auto;
+	}
+	.join__link {
+		margin-right: 20px;
+	}
+	.intro__menu {
+		display: flex;
+		justify-content: space-between;
+		vertical-align: center;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding: 50px 0; 
+	}
+	.intro__img {
+		min-width: 50vw;
+		height: auto;
+	}
+	.intro__about {
+		width: 350px;
+		text-align: left;
+		padding: 0;
+	}
+	.intro__title {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 0;
+	}
+	.intro__text {
+		padding: 15px 0;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.intro-link {
+		margin: 0;
+	}
+	.intro__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.intro__description {
+		width: 350px;
+		font-family: "Nunito";
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 26px;
+	}
+	.intro__description--text {
+		margin-left: 30px;
+		text-align: left;
+	}
+	.second-intro__title {
+		width: 410px;
+	}
+	.we_know {
+		width: 490px;
+	}
+	.category {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+	body {
+		background-color: red;
+	}
+}
+
+/* 2-bolim boshlanishi */
+
+.app-design {
+	padding: 20px 15px; 
+	color: #2f4b6e;
+	font-size: 16px;
+}
+.app-design__look {
+	align-items: center;
+	padding: 20px; 
+}
+.app-design__look--right {
+	flex-direction: row-reverse;
+}
+.app-design__description {
+	text-align: center;
+	margin: 0 auto; 
+}
+.app-design__intro {
+	font-size: 30px;
+	font-weight: 900;	
+}
+.app-design__text {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.app-design__img {
+	width: 90%;
+}
+@media (min-width: 1000px) { 
+	.container {
+		max-width: 1024px;
+	}
+	.app-design__look {
+		position: relative;
+		display: flex;
+	}
+	/* .app-design__look--right::after {
+		position: absolute;
+		content: '';
+		background-color: #e5f2f4;
+		top: 560px;
+		left: 10px;
+		width: 500px;
+		height: 320px;
+		transform: rotate(-2deg)
+	}
+	.app-design__look--left::after {
+		position: absolute;
+		content: '';
+		background-color: #e5f2f4;
+		top: 606px;
+		left: 400px;
+		width: 500px;
+		height: 320px;
+		transform: rotate(5deg)
+	} */
+	.app-design__description {
+		text-align: left;
+	}
+	/* 2-bo'lim yakuni */
+	
+	.box {
+		margin-top: 50px;
+		width: 100%;
+		background-color: #f8e587;
+		border-radius: 15em 8em;
+	}
+	.box img {
+		display: none;
+	}
+	.intro-success {
+		padding: 10px 15px 45px 15px;
+		text-align: center;
+		color: #2f4b6e;
+	}
+	.intro-success__title {
+		font-size: 30px;
+		font-weight: 900;
+	}
+	.intro-success__text {
+		padding-bottom: 30px;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.intro-success__link {
+		position: relative;
+		padding: 10px 30px 10px 50px; 
+		border: 1px solid rgb(47, 75, 110);
+		color: rgb(47, 75, 110);
+		border-radius: 25px;
+		font-size: 15px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.intro-success__link::before {
+		position: absolute;
+		content: url("../img/chat-icon.png");
+		background-position: center;
+		left: 15px;
+	}
+	.intro-success__link:hover {
+		background-color: #f5e999;
+	}
+	
+	@media (max-width: 360px) {
+		.intro-success__link {
+			display: none;
+		}
+	}
+	@media (min-width: 1140px) {
+		.box {
+			display: flex;	
+			position: relative;
+			border-radius: 0;
+			border-top-left-radius: 16em 14em;
+			height: 500px;
+		}
+		.box img {
+			display: block;
+		}
+		.intro-success {
+			padding-top: 100px; 
+			margin: 0 auto;
+			width: 35%;
+		}
+		.box__img--left {
+			position: relative;
+		}
+		.left-image {
+			position: absolute;
+		}
+		.first {
+			top: 50px;
+			left: -10px;
+		}
+		.second {
+			border-width: 6px;
+			border-color: rgb(255, 255, 255);
+			border-style: solid;
+			border-radius: 50%;
+			box-shadow: 0px 12px 34px 0px rgba(0, 0, 0, 0.15);
+			top: 90px;
+			left: 130px;
+			width: 107px;
+			height: 107px;
+		}
+		.third {
+			top: 180px;
+			left: 270px;
+		}
+		.fourth {
+			top: 270px;
+			left: 60px;
+		}
+		.fifth {
+			top: 360px;
+			left: 200px;
+		}
+		.sixth {
+			top: 450px;
+		}
+		.box__img--right {
+			position: relative;
+		}
+		.right-image {
+			position: absolute;
+		}
+		.seven {
+			top: 25px;
+			right: 200px;
+		}
+		.eight {
+			top: -50px;
+			right: 20px;
+		}
+		.nine {
+			top: 180px;
+			right: 100px;
+		}
+		.ten {
+			top: 160px;
+			right: 0px;
+		}
+		.eleven {
+			top: 340px;
+			right: 50px;
+		}
+		.twelve {
+			top: 500px;
+			right: 0;
+		}
+		.thirteen {
+			top: 415px;
+			right: 200px;
+		}
+	
+	}
+	.footer-part {
+		padding: 20px 20px 0 20px;
+		text-align: center;
+		background-color: #f4fcff;
+		color:  #2f4b6e;
+	}
+	.footer-part a, .social-box a { 
+		text-decoration: none;
+		font-weight: 700;
+		color:  #2f4b6e;
+	}
+	.footer-intro__title {
+		font-size: 30px;
+		margin: 0;
+	}
+	.footer-intro__description--text {
+		margin: 10px auto;
+		padding: 10px 20px; 
+		/*width: 30%;*/
+	}
+	.get-app__link {
+		position: relative;
+		padding: 10px 0 10px 15px;
+		display: inline-block;
+		align-items: center;
+		margin-bottom: 10px;
+		border: none; 
+		border-radius: 25px;
+		width: 180px;
+		background-color: #fdc96a;
+		color: #2f4b6e;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.get-app__link::before {
+		position: absolute;
+		content: url("../img/apple-icon.png");
+		top: 5px;
+		left: 10px;
+	}
+	.get-app__link:hover {
+		background-color: 	#FFA500;
+	}
+	.peoples-group {
+		display: none;
+	}
+	.social-icons {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+	.social-box {
+		text-align: center;
+		padding: 30px 30px; 
+		background-color: #e6f8ff;
+	}
+	.documentation a {
+		position: relative;
+		display: inline-block;
+		padding: 20px 0; 
+	}
+	@media (min-width: 900px) {
+		.peoples-group {
+			display: block;
+			margin: 0 auto;
+			padding: 40px 0 0 0;
+		}
+		.footer-intro__description--text {
+			width: 30%;
+		}
+	}
